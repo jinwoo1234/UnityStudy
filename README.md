@@ -3,6 +3,7 @@
 
 Unity 버전 : 2021.3.34f1
 
-Assets<br/>
-├─ Docs -> 설명할 내용 정리<br/>
-└─ Scenes -> 완성된 예시 화면 정리
+Assets <br/>
+├─ Docs -> 설명할 내용 <br/>
+├─ Scenes -> 완성된 예시 화면 <br/>
+└─ Scripts -> C# 코드
