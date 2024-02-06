@@ -23,15 +23,15 @@ public class Collision : MonoBehaviour
 
     //충돌이 일어나는 순간 실행
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Wall")
-        {
-            Debug.Log("충돌!");
-        }
+        
     }
 
     //충돌이 유지되는동안 매 프레임 실행
-    private void OnCollisionStay2D(Collision2D collision) {
-
+    private void OnCollisionStay2D(Collision2D aa) {
+        if (aa.gameObject.tag == "Wall")
+        {
+            Debug.Log("충돌!");
+        }
     }
 
     //충돌이 종료되는 순간 1회 호출
@@ -45,13 +45,13 @@ public class Collision : MonoBehaviour
     }
 
     private void OnTriggerStay2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Wall")
-        {
-            Debug.Log("충돌!");
-        }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-
+if (collision.gameObject.tag == "Wall")
+        {
+            Debug.Log("충돌!");
+        }
     }
 }
